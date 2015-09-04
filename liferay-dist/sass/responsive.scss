@@ -1,0 +1,133 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 980px;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wrapperProject .contCol .sepCol {
+    margin-right: 20px;
+  }
+  .wrapperProject .equipo{
+    width: 140px;
+  }
+  .wrapperProject .contCol .contPrice .des {
+    font-size: 18px;
+  }
+  .wrapperProject .contCol .contPrice .type {
+    padding-top: 52px;
+    font-size: 50px;
+  }
+  .wrapperProject .contCol .contPrice .price {
+    font-size: 110px;
+  }
+  .wrapperProject .contCol .boxDetalle {
+    margin-top: 18px;
+  }
+  .wrapperProject .contCol .boxDetalle ul li {
+    margin-top: 4px;
+  }
+  .wrapperProject .contForm {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .wrapperProject .contForm {
+    max-width: 320px;
+    padding: 18px 18px;
+    margin-top: 14px;
+  }
+}
+
+
+@media (max-width: 768px){
+  .wrapperProject .contForm {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .wrapperProject .contForm {
+    margin-left: 32px;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  body{
+    background-color: #f0f2f5;
+  }
+  .wrapperProject .contLogo {
+    padding: 18px 0 30px;
+  }
+  .wrapperProject .contCol {
+     padding: 0;
+  }
+  .wrapperProject{
+    height: 560px;
+  }
+  .wrapperProject .contForm{
+    background: none;
+    padding: 92px 0 0;
+    margin: 0;
+    display: none;
+  }
+  .wrapperProject .contForm form{
+    margin-left: 0;
+  }
+  .wrapperProject h3 {
+    font-size: 30px;
+  }
+  .wrapperProject .contCol .pegatinaEquipo {
+    margin: 20px 0 26px;
+  }
+  .wrapperProject .equipo{
+    width: 134px;
+  }
+  .wrapperProject .contCol .contPrice .des {
+    font-size: 18px;
+  }
+  .wrapperProject .contCol .contPrice .type {
+    padding-top: 56px;
+    font-size: 38px;
+  }
+  .wrapperProject .contCol .contPrice .price {
+    font-size: 76px;
+    margin-top: 24px;
+  }
+  .wrapperProject .contCol .boxDetalle {
+    margin-top: 18px;
+  }
+  .wrapperProject .contCol .boxDetalle ul li {
+    margin-top: 4px;
+  }
+  .wrapperProject .contCol .txtPlan {
+    margin-top: -2px;
+  }
+  .wrapperProject .contCol .sepCol {
+    margin-right: 6px;
+  }
+  .wrapperProject #btnDesple{
+    margin-bottom: 20px;
+    display: block;
+  }
+  .wrapperProject .contCol .txtPlan {
+    font-size: 16px;
+  }
+  .wrapperProject .contCol .boxDetalle ul li .txt {
+    font-size: 12px;
+  }
+  .wrapperProject .contCol .boxDetalle .titlePlan {
+    font-size: 14px;
+  }
+  .wrapperProject .contCol .boxDetalle{
+    padding: 7px;
+  }
+  .wrapperProject .footer{
+    background: #f0f2f5;
+    padding: 15px 15px 20px;
+    text-align: justify;
+    line-height: 14px;
+  }
+}

@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'movistar_headlineregular';
+  src: url('font/movistarheadline/movistarheadline-webfont.eot');
+  src: url('font/movistarheadline/movistarheadline-webfont.eot?#iefix') format('embedded-opentype'),
+  url('font/movistarheadline/movistarheadline-webfont.ttf') format('truetype'),
+  url('font/movistarheadline/movistarheadline-webfont.svg#MovistarHeadlineBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MovistarHeadlineBold';
+  src: url('font/movistarheadlinebold/movistarheadlinebold-webfont.eot');
+  src: url('font/movistarheadlinebold/movistarheadlinebold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('font/movistarheadlinebold/movistarheadlinebold-webfont.ttf') format('truetype'),
+  url('font/movistarheadlinebold/movistarheadlinebold-webfont.svg#MovistarHeadlineBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MovistarTextRegular';
+  src: url('font/movistartext/movistartext-webfont.eot');
+  src: url('font/movistartext/movistartext-webfont.eot?#iefix') format('embedded-opentype'),
+  url('font/movistartext/movistartext-webfont.ttf') format('truetype'),
+  url('font/movistartext/movistartext-webfont.svg#MovistarTextRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MovistarTextBold';
+  src: url('font/movistartextbold/movistartextbold-webfont.eot');
+  src: url('font/movistartextbold/movistartextbold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('font/movistartextbold/movistartextbold-webfont.ttf') format('truetype'),
+  url('font/movistartextbold/movistartextbold-webfont.svg#MovistarTextBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+$text: 'MovistarTextRegular';
+$textB: 'MovistarTextBold';
+$head: 'movistar_headlineregular';
+$headB: 'MovistarHeadlineBold';

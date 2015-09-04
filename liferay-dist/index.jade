@@ -1,0 +1,106 @@
+extends layout/layout
+include layout/mixins
+block content
+  - var distritos = ['Ate','Barranco','Breña','Carabayllo','Chaclacayo','Chorrillos','Cieneguilla','Comas','El Agustino','Independencia','Jesús María','La Molina','La Victoria','Lima','Lince','Los Olivos','Lurigancho','Lurín','Magdalena del Mar','Miraflores','Pachacamac','Pucusana','Pueblo Libre','Puente Piedra','Punta Hermosa','Punta Negra','Rimac','San Bartolo','San Borja','San Isidro','San Juan de Lurigancho','San Juan de Miraflores','San Luis','San Martín de Porres','San Miguel','Santa Anita','Santa María del Mar','Santa Rosa','Santiago de Surco','Surquillo','Villa El Salvador','Villa María del Triunfo'];
+  .wrapperProject
+    input(type='hidden', name='atm-plan-id', value='111')
+    input(type='hidden', name='atm-plan-nombre', value='Vuela 110')
+    input(type='hidden', name='atm-plan-precio', value='110')
+    input(type='hidden', name='atm-equipo-id', value='248')
+    input(type='hidden', name='atm-equipo-nombre', value='iPhone 5C 8GB')
+    input(type='hidden', name='atm-equipo-marca', value='Apple')
+    .container
+      .row
+        .col-lg-12
+          .contLogo
+            img(src="/documents/80379/2624215/logoMovistar.png/dce4a345-94eb-4342-aa3c-7f14c48ed2b6?t=1439223431284")
+      .row
+        .col-lg-6.col-md-6.col-sm-6
+          .contCol
+            h3 Cámbiate a Movistar
+            .clearfix
+              img(src="/documents/80379/2624192/pegatinaIphone.png/f373f929-546b-4cbe-92b4-86fc5615be7c?t=1439312662855" class="pegatinaEquipo")
+            .clearfix
+              .colNorm.sepCol
+                img(src="/documents/80379/2624192/equipoIphone.png/d2582946-19c6-4723-a664-2b000c89cab7?t=1439223603772" class="equipo")
+              .colNorm
+                .contPrice
+                  span.des Desde
+                  span.type S/.
+                  span.price 9
+                .txtPlan En Plan de S/.110
+                .boxDetalle
+                  .titlePlan Detalles del plan
+                  ul
+                    li
+                      span.icon
+                        img(src="/documents/80379/2624215/icoMb.png/ca9a3cb8-96cb-4803-8911-a24ded9e2917?t=1439223430335")
+                      span.txt Internet 2GB
+                    li
+                      span.icon
+                        img(src="/documents/80379/2624215/icoMinIli.png/3270b73b-12e8-4cec-817e-e98f803ff45b?t=1439223430529")
+                      span.txt 500 Minutos todo<br> destino ilimitado
+                    li
+                      span.icon
+                        img(src="/documents/80379/2624215/icoRpm.png/141b8bd8-67ae-41c8-bec7-f566909dacb1?t=1439223430767")
+                      span.txt RPM ilimitado
+                    li
+                      span.icon
+                        img(src="/documents/80379/2624215/icoSms.png/4991b0f2-416f-4b53-a735-245cf3dc6c11?t=1439223431007")
+                      span.txt SMS ilimitado
+              a.btnComprar2#btnDesple
+                img(src="/documents/80379/2624215/icoComprar.png/1de845c9-e949-4872-8772-04f34350e081?t=1439223428219")
+                span Comprar
+
+        .col-lg-6.col-md-6.col-sm-6
+          .contForm
+            #formOk
+              h2 Su solicitud fue registrada con éxito.
+              p.txtOk En un lapso de 24 horas un asesor exclusivo se estará comunicando con usted.
+
+            #formData
+              .titleForm Ingresa tus datos aquí:
+              form(id="formPorta")
+                .form-group
+                  input(type="text" class="form-control" name="Nombres" id="txtName" placeholder="Nombres")
+                .form-group
+                  input(type="text" class="form-control" name="Apellidos" id="txtAp" placeholder="Apellidos")
+                .form-group
+                  .row
+                    .col-lg-6.col-md-6.col-sm-12
+                      input(type="text" class="form-control" name="Telefono1" id="txtTelFijo" maxlength="7" placeholder="Teléfono Fijo")
+                    .col-lg-6.col-md-6.col-sm-12
+                      input(type="text" class="form-control" name="Telefono2" id="txtTelCel" maxlength="9" placeholder="Celular de contacto")
+                .form-group
+                  input(type="text" class="form-control" name="DNI" id="txtDni" maxlength="8" placeholder="DNI")
+                .form-group
+                  input(type="text" class="form-control" name="Mail" id="txtMail" placeholder="Mail")
+                .form-group
+                  select(class="form-control" name="Distrito" id="cboDistrito")
+                    option(value="") -Selecciona un distrito-
+                    each val in distritos
+                      option(value=val)= val
+
+                .form-group
+                  label(class="checkbox-inline")
+                    input(type="checkbox" name="AceptoTerminoCondiciones" id="checkTerminos")
+                    |Acepto los&nbsp;
+                    a(target="_blank" href="http://catalogo.movistar.com.pe/documentos/TERMINOS-Y-CONDICIONES-GENERALES.pdf")
+                      |Términos y condiciones
+                .form-group
+                  label(class="checkbox-inline")
+                    input(type="checkbox" name="AceptoClasulaProteccionDatos" id="checkNormas")
+                    |Acepto los&nbsp;
+                    a(href="http://catalogo.movistar.com.pe/documentos/PRIVACIDAD-Y-PROTECCION-DE-DATOS.pdf" target="_blank")
+                      |Cláusula de protección de datos
+                .form-errors
+                .form-group
+                  a.btnComprar
+                   img(src="/documents/80379/2624215/icoComprar.png/1de845c9-e949-4872-8772-04f34350e081?t=1439223428219")
+                   span Comprar
+
+                .clearfix
+
+    .footer
+      | Tiempo de vigencia: (por confirmar). Sujeto a evaluación crediticia.Sujeto a un stock mínimo de 50
+      | unidades por equipo.Válido solo para clientes de Lima Metropolitana.

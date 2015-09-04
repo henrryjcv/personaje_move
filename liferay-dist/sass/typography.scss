@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'movistar_headlineregular';
+  src: url('/documents/80379/2627934/movistarheadline-webfont.eot/dbc7904b-6d65-4ca7-832e-6684b6afb1c9');
+  src: url('/documents/80379/2627934/movistarheadline-webfont.eot?#iefix/dbc7904b-6d65-4ca7-832e-6684b6afb1c9') format('embedded-opentype'),
+  url('/documents/80379/2627934/movistarheadline-webfont.ttf/e1839680-4fed-44ca-af1a-36f490fac611') format('truetype'),
+  url('/documents/80379/2627934/movistarheadline-webfont.svg/2de33e3c-7428-4efe-92ce-214e7ac5da61#MovistarHeadlineBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MovistarHeadlineBold';
+  src: url('/documents/80379/2627934/movistarheadlinebold-webfont.eot/32009711-a71b-4668-b6ab-e4fe6db60948');
+  src: url('/documents/80379/2627934/movistarheadlinebold-webfont.eot?#iefix/32009711-a71b-4668-b6ab-e4fe6db60948') format('embedded-opentype'),
+  url('/documents/80379/2627934/movistarheadlinebold-webfont.ttf/f50bffd8-639b-44f7-a735-daf47f95078e') format('truetype'),
+  url('/documents/80379/2627934/movistarheadlinebold-webfont.svg/9285b6ba-152a-4630-aaa9-35b8a83dbd55#MovistarHeadlineBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MovistarTextRegular';
+  src: url('/documents/80379/2627934/movistartext-webfont.eot/0b891a0f-2d97-4634-a1e3-5f5c56187a8d');
+  src: url('/documents/80379/2627934/movistartext-webfont.eot?#iefix/0b891a0f-2d97-4634-a1e3-5f5c56187a8d') format('embedded-opentype'),
+  url('/documents/80379/2627934/movistartext-webfont.ttf/d39ed5e5-c45e-4af9-aa49-0389a9a85a02') format('truetype'),
+  url('/documents/80379/2627934/movistartext-webfont.svg/34ec0682-335a-44d4-b9d3-d4b8cc5c6473#MovistarTextRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MovistarTextBold';
+  src: url('/documents/80379/2627934/movistartextbold-webfont.eot/1335c441-50a9-459a-949b-596d7998c249');
+  src: url('/documents/80379/2627934/movistartextbold-webfont.eot?#iefix/1335c441-50a9-459a-949b-596d7998c249') format('embedded-opentype'),
+  url('/documents/80379/2627934/movistartextbold-webfont.ttf/85edb187-41ba-4c57-8c0d-c0c4ec588dd1') format('truetype'),
+  url('/documents/80379/2627934/movistartextbold-webfont.svg/a2ad9340-7f3c-4de0-8b91-af813fbbcf9a#MovistarTextBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+$text: 'MovistarTextRegular';
+$textB: 'MovistarTextBold';
+$head: 'movistar_headlineregular';
+$headB: 'MovistarHeadlineBold';

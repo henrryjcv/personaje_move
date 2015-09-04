@@ -1,0 +1,35 @@
+- var metaPage = {metaTitle: '',metaDescription:'',metaKeywords:'',metaAuthor:'',linkFavicon:''}
+- var metaFB = {metaTitle: '',metaDescription:'',metaType:'website',metaUrl:'',metaImage:''}
+doctype html
+<!--[if lte IE 8]><html lang="es" class="no-js lt-ie9"><![endif]-->
+<!--[if gte IE 9]><html lang="es" class="no-js gte-ie9"><![endif]-->
+<!--[if !IE]><!-->
+html(lang="es", class="no-js")
+    <!--<![endif]-->
+    head
+        meta(charset='utf-8')
+        title= metaPage.metaTitle
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name='viewport' ,content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+        meta(name='description',content=metaPage.metaDescription)
+        meta(name='keywords',content=metaPage.metaKeywords)
+        meta(name='author',content=metaPage.metaAuthor)
+        meta(property='og:title', content=metaFB.metaTitle)
+        meta(property='og:description', content=metaFB.metaDescription)
+        meta(property='og:type', content=metaFB.metaType)
+        meta(property='og:url', content=metaFB.metaUrl)
+        meta(property='og:image', content=metaFB.metaImage)
+        link(rel='shortcut icon', type='image/x-icon', href=metaPage.linkFavicon)
+        link(rel="stylesheet", href="css/vendor/bootstrap.min.css")
+        link(rel='stylesheet', href='css/style.css')
+        script(src='js/vendor/jquery-1.8.3.js')
+        script(src='js/vendor/modernizr.js')
+        script(src='js/vendor/respond.js')
+        script(src='js/vendor/jquery.xdomainrequest.min.js')
+        script
+    body
+        block content
+        script(src='js/vendor/jquery.validate.js')
+        script(src='js/vendor/jquery.alphanumeric.pack.js')
+        script(src='js/vendor/placeholder.js')
+        script(src='js/init.js')

@@ -1,0 +1,278 @@
+/**
+*  @description [description]
+*  @author [author]
+*  @version [version]
+*  @copyright [description]
+*
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+:focus {
+  outline: 0;
+}
+
+body {
+  line-height: 1;
+  color: black;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+blockquote, q {
+  quotes: "" "";
+}
+
+@font-face {
+  font-family: 'movistar_headlineregular';
+  src: url("font/movistarheadline/movistarheadline-webfont.eot");
+  src: url("font/movistarheadline/movistarheadline-webfont.eot?#iefix") format("embedded-opentype"), url("font/movistarheadline/movistarheadline-webfont.ttf") format("truetype"), url("font/movistarheadline/movistarheadline-webfont.svg#MovistarHeadlineBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MovistarHeadlineBold';
+  src: url("font/movistarheadlinebold/movistarheadlinebold-webfont.eot");
+  src: url("font/movistarheadlinebold/movistarheadlinebold-webfont.eot?#iefix") format("embedded-opentype"), url("font/movistarheadlinebold/movistarheadlinebold-webfont.ttf") format("truetype"), url("font/movistarheadlinebold/movistarheadlinebold-webfont.svg#MovistarHeadlineBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MovistarTextRegular';
+  src: url("font/movistartext/movistartext-webfont.eot");
+  src: url("font/movistartext/movistartext-webfont.eot?#iefix") format("embedded-opentype"), url("font/movistartext/movistartext-webfont.ttf") format("truetype"), url("font/movistartext/movistartext-webfont.svg#MovistarTextRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MovistarTextBold';
+  src: url("font/movistartextbold/movistartextbold-webfont.eot");
+  src: url("font/movistartextbold/movistartextbold-webfont.eot?#iefix") format("embedded-opentype"), url("font/movistartextbold/movistartextbold-webfont.ttf") format("truetype"), url("font/movistartextbold/movistartextbold-webfont.svg#MovistarTextBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wrapperProject {
+  position: absolute;
+  width: 100%;
+  height: 2000px;
+  margin: 0;
+  padding: 0;
+  background: rgba(247, 246, 255, 0.01);
+}
+.wrapperProject #contPer {
+  background: url(../images/hombre-caminando.png) no-repeat;
+  width: 90px;
+  height: 95px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -48px;
+  margin-top: -51px;
+  z-index: 2;
+}
+.wrapperProject #contPer .interFoto {
+  height: 46px;
+  margin-left: 23px;
+  margin-top: 6px;
+  width: 45px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 980px;
+    margin-bottom: 10px;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wrapperProject .contCol .sepCol {
+    margin-right: 20px;
+  }
+
+  .wrapperProject .equipo {
+    width: 140px;
+  }
+
+  .wrapperProject .contCol .contPrice .des {
+    font-size: 18px;
+  }
+
+  .wrapperProject .contCol .contPrice .type {
+    padding-top: 52px;
+    font-size: 50px;
+  }
+
+  .wrapperProject .contCol .contPrice .price {
+    font-size: 110px;
+  }
+
+  .wrapperProject .contCol .boxDetalle {
+    margin-top: 18px;
+  }
+
+  .wrapperProject .contCol .boxDetalle ul li {
+    margin-top: 4px;
+  }
+
+  .wrapperProject .contForm {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .wrapperProject .contForm {
+    max-width: 320px;
+    padding: 18px 18px;
+    margin-top: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .wrapperProject .contForm {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .wrapperProject .contForm {
+    margin-left: 32px;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  body {
+    background-color: #f0f2f5;
+  }
+
+  .wrapperProject .contLogo {
+    padding: 18px 0 30px;
+  }
+
+  .wrapperProject .contCol {
+    padding: 0;
+  }
+
+  .wrapperProject {
+    height: 560px;
+  }
+
+  .wrapperProject .contForm {
+    background: none;
+    padding: 92px 0 0;
+    margin: 0;
+    display: none;
+  }
+
+  .wrapperProject .contForm form {
+    margin-left: 0;
+  }
+
+  .wrapperProject h3 {
+    font-size: 30px;
+  }
+
+  .wrapperProject .contCol .pegatinaEquipo {
+    margin: 20px 0 26px;
+  }
+
+  .wrapperProject .equipo {
+    width: 134px;
+  }
+
+  .wrapperProject .contCol .contPrice .des {
+    font-size: 18px;
+  }
+
+  .wrapperProject .contCol .contPrice .type {
+    padding-top: 56px;
+    font-size: 38px;
+  }
+
+  .wrapperProject .contCol .contPrice .price {
+    font-size: 76px;
+    margin-top: 24px;
+  }
+
+  .wrapperProject .contCol .boxDetalle {
+    margin-top: 18px;
+  }
+
+  .wrapperProject .contCol .boxDetalle ul li {
+    margin-top: 4px;
+  }
+
+  .wrapperProject .contCol .txtPlan {
+    margin-top: -2px;
+  }
+
+  .wrapperProject .contCol .sepCol {
+    margin-right: 6px;
+  }
+
+  .wrapperProject #btnDesple {
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .wrapperProject .contCol .txtPlan {
+    font-size: 16px;
+  }
+
+  .wrapperProject .contCol .boxDetalle ul li .txt {
+    font-size: 12px;
+  }
+
+  .wrapperProject .contCol .boxDetalle .titlePlan {
+    font-size: 14px;
+  }
+
+  .wrapperProject .contCol .boxDetalle {
+    padding: 7px;
+  }
+
+  .wrapperProject .footer {
+    background: #f0f2f5;
+    padding: 15px 15px 20px;
+    text-align: justify;
+    line-height: 14px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
