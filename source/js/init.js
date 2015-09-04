@@ -1,11 +1,11 @@
 (function() {
   var cantPosiciones, personaje, posicion, scrollTimer, widthImage;
 
-  cantPosiciones = 7;
+  cantPosiciones = 2;
 
-  widthImage = 90;
+  widthImage = 200;
 
-  posicion = 0;
+  posicion = 1;
 
   scrollTimer = null;
 
@@ -22,7 +22,7 @@
         if (posicion > cantPosiciones) {
           posicion = 0;
         }
-        personaje.css('backgroundPosition', -(widthImage * posicion));
+        personaje.css('backgroundPosition', -(widthImage * posicion) + 'px 0px');
         return posicion++;
       }, 1);
     });
