@@ -1,7 +1,7 @@
 (function() {
   var cantPosiciones, personaje, posicion, scrollTimer, widthImage;
 
-  cantPosiciones = 2;
+  cantPosiciones = 8;
 
   widthImage = 200;
 
@@ -9,7 +9,7 @@
 
   scrollTimer = null;
 
-  personaje = $('#contPer');
+  personaje = $('.personaje');
 
   $(function() {
     return $(window).scroll(function(e) {

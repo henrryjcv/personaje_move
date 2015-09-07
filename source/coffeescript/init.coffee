@@ -1,9 +1,9 @@
-cantPosiciones = 2
+cantPosiciones = 8
 widthImage = 200
 posicion = 1
 scrollTimer = null
 
-personaje = $('#contPer')
+personaje = $('.personaje')
 
 $ ->
   $(window).scroll (e) ->
@@ -20,3 +20,6 @@ $ ->
       personaje.css('backgroundPosition', -(widthImage * posicion) + 'px 0px')
       posicion++
     , 1
+
+
+
