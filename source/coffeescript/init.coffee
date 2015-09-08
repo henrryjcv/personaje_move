@@ -1,25 +1,37 @@
-cantPosiciones = 8
+cantPosiciones = 2
 widthImage = 200
 posicion = 1
+paso = 50
 scrollTimer = null
-
 personaje = $('.personaje')
+inicial = 0
 
 $ ->
+
   $(window).scroll (e) ->
     e.preventDefault()
-    if scrollTimer
-      clearTimeout(scrollTimer)
+    final = $(window).scrollTop();
+    if final > inicial
+      inicial =  final
 
-    scrollTimer = setTimeout ->
-      scrollTimer = null
+      if scrollTimer
+        clearTimeout(scrollTimer)
 
-      if(posicion > cantPosiciones)
-        posicion = 0
+      scrollTimer = setTimeout ->
+        scrollTimer = null
 
-      personaje.css('backgroundPosition', -(widthImage * posicion) + 'px 0px')
-      posicion++
-    , 1
+        if(posicion > cantPosiciones)
+          posicion = 0
+
+        TweenMax.to('.boxGreen',1,{right:+paso})
+        personaje.css('backgroundPosition', -(widthImage * posicion) + 'px 0px')
+        posicion++
+        paso = paso + 50
+      , 1
+
+
+
+
 
 
 
